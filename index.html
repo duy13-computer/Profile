@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đỗ Ngọc Duy | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Playfair+Display:wght@700;900&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Quy ước song ngữ: nội dung mặc định là tiếng Việt, bản tiếng Anh nằm ở thuộc tính data-en -->
+
+  <header class="header">
+    <nav class="nav container" aria-label="Điều hướng chính">
+      <a href="#home" class="nav__logo">Đỗ Ngọc Duy</a>
+      <ul class="nav__list" id="nav-list">
+        <li><a class="nav__link" href="#home" data-en="Home">Trang chủ</a></li>
+        <li><a class="nav__link" href="#about" data-en="About">Giới thiệu</a></li>
+        <li><a class="nav__link" href="#goals" data-en="Goals">Mục tiêu</a></li>
+        <li><a class="nav__link" href="#skills" data-en="Skills">Kỹ năng</a></li>
+        <li><a class="nav__link" href="#timeline" data-en="Education">Học vấn</a></li>
+        <li><a class="nav__link" href="#projects" data-en="Projects">Dự án</a></li>
+        <li><a class="nav__link" href="#contact" data-en="Contact">Liên hệ</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="icon-btn" id="lang-toggle" aria-label="Đổi ngôn ngữ / Switch language">EN</button>
+        <button class="icon-btn" id="theme-toggle" aria-label="Đổi giao diện">🌙</button>
+        <button class="icon-btn nav__burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="label" data-en="Personal portfolio">Hồ sơ cá nhân</p>
+          <h1 class="hero__name">Đỗ Ngọc Duy</h1>
+          <p class="hero__role"><span data-en="I am">Tôi là</span> <span id="typing" class="hero__typing"></span><span class="hero__caret">|</span></p>
+          <p class="hero__desc" data-en="Final-year IT student, learning step by step towards cybersecurity and DevOps.">Sinh viên Công nghệ thông tin năm cuối, đang học từng bước để hướng tới an ninh mạng và DevOps.</p>
+          <div class="hero__btns">
+            <a href="#projects" class="btn btn--primary" data-en="View projects">Xem dự án</a>
+            <a href="#contact" class="btn" data-en="Contact me">Liên hệ</a>
+          </div>
+        </div>
+        <figure class="photo">
+          <img src="anhdaidien.jpg" alt="Ảnh đại diện Đỗ Ngọc Duy">
+          <figcaption data-en="Do Ngoc Duy, Vietnam">Đỗ Ngọc Duy, Việt Nam</figcaption>
+          <span class="stamp" data-en="Year 3 · IT">Năm 3 · CNTT</span>
+        </figure>
+      </div>
+    </section>
+
+    <!-- GIỚI THIỆU -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title reveal"><small>№ 01</small><span data-en="About me">Giới thiệu bản thân</span></h2>
+        <div class="about reveal">
+          <img class="about__img" src="https://placehold.co/300x360/d9c9a3/2a2018?text=Anh+ca+nhan" alt="Ảnh cá nhân">
+          <div>
+            <p data-en="I am an IT student who loves learning and digging into the root of every problem, then turning knowledge into real products. I am not afraid to ask questions when stuck, ready to experiment, fix bugs and persist until the work is done, and I always try to see problems from many angles to build independent thinking and professional ability.">Tôi là sinh viên Công nghệ thông tin, có tinh thần học hỏi, thích tìm hiểu bản chất vấn đề và từng bước biến kiến thức thành sản phẩm thực tế. Tôi không ngại đặt câu hỏi khi gặp khó khăn, sẵn sàng thử nghiệm, sửa lỗi và kiên trì hoàn thiện công việc, đồng thời luôn muốn nhìn nhận vấn đề đa chiều để phát triển tư duy độc lập và năng lực chuyên môn.</p>
+            <ul class="about__info">
+              <li><strong data-en="Name:">Họ tên:</strong> Đỗ Ngọc Duy</li>
+              <li><strong data-en="Age:">Tuổi:</strong> <span data-en="twenty">20</span></li>
+              <li><strong data-en="Hometown:">Quê quán:</strong> <span data-en="DakLak, Phu Yen Province">DakLak, tỉnh Phú Yên</span></li>
+              <li><strong data-en="University:">Trường:</strong> <span data-en="University of Transport and Communications">ĐH Giao thông Vận tải</span></li>
+              <li><strong data-en="Major:">Ngành:</strong> <span data-en="Information Technology">Công nghệ thông tin</span></li>
+              <li><strong>GPA:</strong> 3.2</li>
+            </ul>
+            <h3 class="about__sub" data-en="Interests">Sở thích</h3>
+            <ul class="chips">
+              <li data-en="🏍️ Backpacking around Vietnam">🏍️ Phượt khám phá Việt Nam</li>
+              <li data-en="📚 Books on society &amp; human interaction">📚 Sách về xã hội, đời sống, con người</li>
+              <li data-en="💌 Romance novels">💌 Sách lãng mạn</li>
+              <li data-en="⚽ Sports">⚽ Thể thao</li>
+              <li data-en="🏋️ Gym">🏋️ Thể hình</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MỤC TIÊU -->
+    <section class="section section--alt" id="goals">
+      <div class="container">
+        <h2 class="section__title reveal"><small>№ 02</small><span data-en="Career goals">Mục tiêu nghề nghiệp</span></h2>
+        <div class="grid grid--2">
+          <article class="card reveal">
+            <h3 data-en="Short term">Ngắn hạn</h3>
+            <ul class="list">
+              <li data-en="Earn a TOEIC certificate.">Học và lấy chứng chỉ TOEIC.</li>
+              <li data-en="Learn Google's security skills on Google Skills.">Học thêm kỹ năng bảo mật của Google trên Google Skills.</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3 data-en="Long term">Dài hạn</h3>
+            <ul class="list">
+              <li data-en="Become a cybersecurity or DevOps engineer, building and running systems that are stable and safe.">Trở thành kỹ sư an ninh mạng hoặc DevOps, xây dựng và vận hành hệ thống ổn định, an toàn.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- KỸ NĂNG -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section__title reveal"><small>№ 03</small><span data-en="Skills">Kỹ năng</span></h2>
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <h3 data-en="Programming &amp; theory">Lập trình &amp; nền tảng</h3>
+            <ul class="chips">
+              <li data-en="🧩 Object-oriented programming">🧩 Lập trình hướng đối tượng</li>
+              <li data-en="🌲 Data structures &amp; algorithms">🌲 Cấu trúc dữ liệu &amp; giải thuật</li>
+              <li data-en="📊 Probability &amp; statistics">📊 Xác suất thống kê</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3 data-en="Networking">Mạng máy tính</h3>
+            <ul class="chips">
+              <li data-en="🌐 Computer networks">🌐 Mạng máy tính</li>
+              <li data-en="📡 Advanced networking">📡 Mạng máy tính nâng cao</li>
+              <li data-en="🗺️ Network design">🗺️ Thiết kế mạng</li>
+              <li data-en="🔌 Network programming">🔌 Lập trình mạng</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3 data-en="Tools">Công cụ</h3>
+            <ul class="chips">
+              <li>🌿 Git</li><li>🗄️ MySQL</li><li>🛰️ Cisco Packet Tracer</li><li>🐧 Ubuntu</li><li>💻 Linux</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HỌC VẤN -->
+    <section class="section section--alt" id="timeline">
+      <div class="container">
+        <h2 class="section__title reveal"><small>№ 04</small><span data-en="Education &amp; activities">Học vấn &amp; Hoạt động</span></h2>
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <span class="label" data-en="Present">Hiện tại</span>
+            <h3 data-en="University of Transport and Communications, Information Technology">Trường Đại học Giao thông Vận tải, ngành Công nghệ thông tin</h3>
+            <p data-en="Currently in year 3, GPA 3.2.">Đang học năm 3, GPA 3.2.</p>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="label" data-en="In progress">Đang thực hiện</span>
+            <h3 data-en="DevOps project">Dự án DevOps</h3>
+            <p data-en="A personal project to practise DevOps thinking and workflow.">Dự án đang làm để thực hành tư duy và quy trình DevOps.</p>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="label" data-en="Completed">Đã hoàn thành</span>
+            <h3 data-en="Core courses">Các học phần chính</h3>
+            <p data-en="Software engineering, network programming, advanced networking, network design, OOP, data structures &amp; algorithms, probability &amp; statistics.">Công nghệ phần mềm, lập trình mạng, mạng máy tính nâng cao, thiết kế mạng, lập trình hướng đối tượng, cấu trúc dữ liệu &amp; giải thuật, xác suất thống kê.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- DỰ ÁN -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section__title reveal"><small>№ 05</small><span data-en="Personal projects">Dự án cá nhân</span></h2>
+        <div class="grid grid--2">
+          <article class="project reveal">
+            <img class="project__img" src="https://placehold.co/600x380/c9b88f/2a2018?text=DevOps" alt="Ảnh dự án DevOps">
+            <div class="project__body">
+              <h3 class="project__title" data-en="DevOps project">Dự án DevOps</h3>
+              <p class="project__desc" data-en="Work in progress, practising DevOps workflow.">Đang thực hiện, thực hành quy trình DevOps.</p>
+              <p class="project__detail" hidden data-en="This project is in progress. Add the detailed description, tools used and GitHub link here.">Dự án đang trong quá trình thực hiện. Bổ sung mô tả chi tiết, công cụ sử dụng và link GitHub tại đây.</p>
+              <ul class="chips"><li>DevOps</li><li data-en="In progress">Đang thực hiện</li></ul>
+              <div class="project__links"><button class="btn btn--small btn--primary js-open-modal" data-en="Details">Chi tiết</button><a class="btn btn--small" href="https://github.com/duy13-computer" target="_blank" rel="noopener">GitHub</a></div>
+            </div>
+          </article>
+          <article class="project reveal">
+            <img class="project__img" src="https://placehold.co/600x380/b9a98a/2a2018?text=Second-hand+Shop" alt="Ảnh dự án website mua bán đồ cũ">
+            <div class="project__body">
+              <h3 class="project__title" data-en="Second-hand marketplace website">Website mua bán đồ cũ</h3>
+              <p class="project__desc" data-en="A website for buying and selling used items.">Trang web mua bán đồ cũ.</p>
+              <p class="project__detail" hidden data-en="A buying and selling website built for the Software Engineering course. Add the features, technologies and your role here.">Trang web mua bán đồ cũ thực hiện trong môn Công nghệ phần mềm. Bổ sung chức năng, công nghệ và vai trò của bạn tại đây.</p>
+              <ul class="chips"><li data-en="Software Engineering">Công nghệ phần mềm</li><li>Web</li></ul>
+              <div class="project__links"><button class="btn btn--small btn--primary js-open-modal" data-en="Details">Chi tiết</button><a class="btn btn--small" href="#" data-en="Demo">Demo</a></div>
+            </div>
+          </article>
+          <article class="project reveal">
+            <img class="project__img" src="https://placehold.co/600x380/c2b08a/2a2018?text=File+Transfer" alt="Ảnh dự án truyền file">
+            <div class="project__body">
+              <h3 class="project__title" data-en="File transfer program">Chương trình truyền file</h3>
+              <p class="project__desc" data-en="Transfer files between machines over a network.">Truyền file giữa các máy qua mạng.</p>
+              <p class="project__detail" hidden data-en="A file transfer program built for the Network Programming course. Add the protocol, language and how it works here.">Chương trình truyền file thực hiện trong môn Lập trình mạng. Bổ sung giao thức, ngôn ngữ và cách hoạt động tại đây.</p>
+              <ul class="chips"><li data-en="Network Programming">Lập trình mạng</li></ul>
+              <div class="project__links"><button class="btn btn--small btn--primary js-open-modal" data-en="Details">Chi tiết</button><a class="btn btn--small" href="#" data-en="Source code">Mã nguồn</a></div>
+            </div>
+          </article>
+          <article class="project reveal">
+            <img class="project__img" src="https://placehold.co/600x380/b5a584/2a2018?text=Packet+Tracer" alt="Ảnh dự án thiết kế mạng">
+            <div class="project__body">
+              <h3 class="project__title" data-en="Enterprise network design">Thiết kế mạng doanh nghiệp</h3>
+              <p class="project__desc" data-en="Enterprise network designed in Cisco Packet Tracer.">Thiết kế mạng doanh nghiệp bằng Cisco Packet Tracer.</p>
+              <p class="project__detail" hidden data-en="Done in the Advanced Networking and Network Design courses. Add the topology, protocols and configuration you used here.">Thực hiện trong môn Mạng máy tính nâng cao và Thiết kế mạng. Bổ sung sơ đồ mạng, giao thức và cấu hình đã dùng tại đây.</p>
+              <ul class="chips"><li>Cisco Packet Tracer</li><li data-en="Network Design">Thiết kế mạng</li></ul>
+              <div class="project__links"><button class="btn btn--small btn--primary js-open-modal" data-en="Details">Chi tiết</button><a class="btn btn--small" href="#" data-en="Demo">Demo</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHỨNG CHỈ -->
+    <section class="section section--alt" id="certs">
+      <div class="container">
+        <h2 class="section__title reveal"><small>№ 06</small><span data-en="Certificates &amp; awards">Chứng chỉ &amp; Giải thưởng</span></h2>
+        <div class="grid grid--3">
+          <article class="card reveal"><h3>TOEIC</h3><p data-en="Working towards it">Đang hướng tới</p></article>
+          <article class="card reveal"><h3 data-en="Google security course">Khóa bảo mật của Google</h3><p data-en="Google Skills, working towards it">Google Skills, đang hướng tới</p></article>
+          <article class="card reveal"><h3 data-en="Awards">Giải thưởng</h3><p data-en="Not updated">Chưa cập nhật</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIÊN HỆ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section__title reveal"><small>№ 07</small><span data-en="Get in touch">Liên hệ</span></h2>
+        <div class="contact reveal">
+          <ul class="contact__info">
+            <li>✉️ <a href="mailto:ngocduy1301py@gmail.com">ngocduy1301py@gmail.com</a></li>
+            <li>📞 <a href="tel:0902576013">0902 576 013</a></li>
+            <li>🐙 <a href="https://github.com/duy13-computer" target="_blank" rel="noopener">github.com/duy13-computer</a></li>
+            <li>📘 <a href="https://www.facebook.com/ngoc.duy.861796/" target="_blank" rel="noopener">Facebook</a></li>
+            <li>📸 <a href="https://www.instagram.com/ng_oc2598/" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+          <form class="form" id="contact-form" novalidate>
+            <div class="form__group">
+              <label for="name" data-en="Full name">Họ tên</label>
+              <input type="text" id="name" name="name" placeholder="Nguyễn Văn A" data-en-ph="Your name">
+              <small class="form__error" data-error-for="name"></small>
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="ban@example.com">
+              <small class="form__error" data-error-for="email"></small>
+            </div>
+            <div class="form__group">
+              <label for="message" data-en="Message">Tin nhắn</label>
+              <textarea id="message" name="message" rows="5" placeholder="Nội dung tin nhắn..." data-en-ph="Your message..."></textarea>
+              <small class="form__error" data-error-for="message"></small>
+            </div>
+            <button type="submit" class="btn btn--primary" data-en="Send message">Gửi tin nhắn</button>
+            <p class="form__success" id="form-success" hidden data-en="✅ Opening your mail app to send the message.">✅ Đang mở ứng dụng email để gửi tin nhắn.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><p>© 2026 Đỗ Ngọc Duy</p></footer>
+
+  <!-- MODAL CHI TIẾT DỰ ÁN -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal__box">
+      <button class="modal__close" id="modal-close" aria-label="Đóng">✕</button>
+      <img class="modal__img" id="modal-img" src="" alt="">
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <ul class="chips" id="modal-tags"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
